@@ -1,0 +1,6 @@
+
+Use this directory to customize gitlab's behaviour.
+If you are not using gitlab feel free to delete this directory.
+
+- [Issues templates](https://docs.gitlab.com/ee/user/project/description_templates.html#create-an-issue-template)
+- [Pull request templates](https://docs.gitlab.com/ee/user/project/description_templates.html#create-a-merge-request-template)
