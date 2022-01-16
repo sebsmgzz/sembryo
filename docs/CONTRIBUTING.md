@@ -79,7 +79,7 @@ There are 6 types of branches.
 | Production   | `main` (aka `master`) | None            | None          | None     
 | Release      | `release\X`           | None            | `main`        | `main`
 | Hotfix       | `hfix\X`              | `bug`           | `main`        | `main`, `release`
-| Develop      | `develop`             | `bug`, `clean`  | `release\x`   | `release\x`
+| Develop      | `develop\X`           | `bug`, `clean`  | `release\x`   | `release\x`
 | Feature      | `feat\X`              | Any             | `develop`     | `develop`
 | Experimental | `exp\X`               | Any             | Any           | None
 
