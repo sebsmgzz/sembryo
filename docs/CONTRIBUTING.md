@@ -74,14 +74,14 @@ There are 6 types of branches.
 - **Feature** - Here is where the magic happens. Anytype of commits are allowed here. Branch naming is `feat\X` where `X` is the issue number of the feature. However, if several developers are working on an individual feature, it is recommended to split those branches into separate branches by appending the name of the developer to them. Once these branch merge into a `develop` branch, delete them.
 - **Experimental** - These branches are completly meant for breaking up things. Feel free to use them to mess around and do research for specific features. Do **NOT** ever merge this branches since they are meant to be cause breaking changes to the existing code base.
 
-| Branch       | Name                  | Allowed commits | Checkout from | Merge into |
-| :-           | :-                    | :-              | :-            | :-         |
-| Production   | `main` (aka `master`) | None            | None          | None     
-| Release      | `release\X`           | None            | `main`        | `main`
-| Hotfix       | `hfix\X`              | `bug`           | `main`        | `main`, `release`
-| Develop      | `develop\X`           | `bug`, `clean`  | `release\x`   | `release\x`
-| Feature      | `feat\X`              | Any             | `develop`     | `develop`
-| Experimental | `exp\X`               | Any             | Any           | None
+| Branch       | Name                  | Allowed commits          | Checkout from | Merge into |
+| :-           | :-                    | :-                       | :-            | :-         |
+| Production   | `main` (aka `master`) | None                     | None          | None
+| Release      | `release\X`           | None                     | `main`        | `main`
+| Hotfix       | `hfix\X`              | `bug`                    | `main`        | `main`, `release`
+| Develop      | `develop\X`           | `bug`, `clean`, `refact` | `release\X`   | `release\X`
+| Feature      | `feat\X`              | Any                      | `develop`     | `develop`
+| Experimental | `exp\X`               | Any                      | Any           | None
 
 ### Documentation styleguide
 Use markdown whenever possible:
