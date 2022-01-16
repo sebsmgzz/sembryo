@@ -90,12 +90,12 @@ the team's workflow.
 
 | Color   | Label | Description |
 | :-      | :-    | :-          |
-| #ff0000 | `bug` | Indicates an unexpected problem or unintended behavior
-| #c39953 | `enhancement` | Indicates a new feature or refactoring
-| #0000ff | `documentation` | Indicates a need for improvements or additions to documentation
-| #c39953 | `duplicate` | Indicates similar issues, pull/merge requests, or discussions already exist
-| #c39953 | `question` | Indicates that an issue, pull/merge request, or discussion needs more information
-| #c39953 | `invalid` | Indicates that an issue, pull/merge request, or discussion is no longer relevant
+| #9F2B00 | `bug` | Indicates an unexpected problem or unintended behavior
+| #489C17 | `enhancement` | Indicates a new feature or refactoring
+| #0000FF | `documentation` | Indicates a need for improvements or additions to documentation
+| #A91B60 | `duplicate` | Indicates similar issues, pull/merge requests, or discussions already exist
+| #52688F | `question` | Indicates that an issue, pull/merge request, or discussion needs more information
+| #523A28 | `invalid` | Indicates that an issue, pull/merge request, or discussion is no longer relevant
 
 #### Priority labels
 Uses the Eisenhower Decision Principle.
@@ -110,10 +110,10 @@ The resulting combination dictates the action to take with the issue:
 
 | Color   | Label | Description |
 | :-      | :-    | :-          |
-| #ff0000 | `priority::importance::high` | Issue is likely to block/affect future work.
-| #00b140 | `priority::importance::low` | Issue won't affect future work in a negative way. 
-| #ff0000 | `priority::urgency::high` | Issue has a close deadline, or asap attention.
-| #00b140 | `priority::urgency::low` | Issue deadline is far away.
+| #C85250 | `priority::importance::high` | Issue is likely to block/affect future work.
+| #F7BEC0 | `priority::importance::low` | Issue won't affect future work in a negative way. 
+| #C85250 | `priority::urgency::high` | Issue has a close deadline, or asap attention.
+| #F7BEC0 | `priority::urgency::low` | Issue deadline is far away.
 
 #### Work level labels
 Based of the Cynefin framework. 
@@ -128,11 +128,11 @@ to be broken down into *simple* tasks in order for them to accomplish it correct
 
 | Color   | Label | Description |
 | :-      | :-    | :-          |
-| #e6e6fa | `work::simple` | Issue consists of "known knowns". The relationship between cause and effect is clear: if you do X, expect Y.
-| #19e47e | `work::complicated` | Issue consists of "known unknowns". The relationship between cause and effect requires analysis or expertise.
-| #fbc45f | `work::complex` | Issue consists of "unknown unknowns". The relationship between cause and effect can only be deduced in retrospect, and there are no right answers.
-| #ff4d4d | `work::chaotic` | Issue is "too confusing to wait for a knowledge-based response". The relationship between cause and effect are unclear.
-| #000    | `work::disorder` | Issue with no clarity of which kind of consistency or work applies. 
+| #E6E6FA | `work::simple` | Issue consists of "known knowns". The relationship between cause and effect is clear: if you do X, expect Y.
+| #B1B1B1 | `work::complicated` | Issue consists of "known unknowns". The relationship between cause and effect requires analysis or expertise.
+| #747474 | `work::complex` | Issue consists of "unknown unknowns". The relationship between cause and effect can only be deduced in retrospect, and there are no right answers.
+| #444444 | `work::chaotic` | Issue is "too confusing to wait for a knowledge-based response". The relationship between cause and effect are unclear.
+| #0A0708 | `work::disorder` | Issue with no clarity of which kind of consistency or work applies. 
 
 #### Status labels
 Based of the basic Kanban framework. 
@@ -143,6 +143,6 @@ since this depends on the available environments for the project, and the projec
 
 | Color   | Label | Description |
 | :-      | :-    | :-          |
-| #5CA277 | `status::ongoing` | Issue is moving towards completion as there is work being made to solve them.
-| #E4A527 | `status::testing` | Issue is considered complete but lack quality assurance and approvements.
-| #dc143c | `status::blocked` | Issue is blocked and unable to work on due to a different issue going on.
+| #00B140 | `status::ongoing` | Issue is moving towards completion as there is work being made to solve them.
+| #FBB80F | `status::testing` | Issue is considered complete but lack quality assurance and approvements.
+| #DC143C | `status::blocked` | Issue is blocked and unable to work on due to a different issue going on.
