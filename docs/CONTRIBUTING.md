@@ -48,6 +48,13 @@ Styleguides
 - End the file with a line break. It makes it easier to append new data from the cli.
 - Follow the most common practices accordingly for each language.
 
+### Versioning
+We follow a basic [semantic versioning](https://semver.org/) naming convention.
+Where X.Y.Z represents a version number:
+- X is the MAYOR version, usually migrations and breaking business logic changes
+- Y is the MINOR version, features additions
+- Z is the PATCH version, bug fixes, refactoring, etc
+
 ### Git commit messages styleguide
 - Use the imperative mood forsubjects (If applied, this commit will [commit-message-here])
 - Limit the first line to 72 characters or less
@@ -58,10 +65,11 @@ Styleguides
 | Prefix    | Description |
 | :-        | :-          |
 | `docs:`   | Adding or updating documentation
-| `feat:`   | Adding a new feature 
 | `fix:`    | Fixing a bug, most likely related to an issue
-| `refact:` | Refactoring code
-| `clean:`  | Indentation changes, brackets alignment, spliting classes into multiple files, etc
+| `feat:`   | Feature addition, usually integrated as branch merges
+| `chore:`  | Regular code maintenance, a part of the implementation towards a feature as a whole
+| `refact:` | Refactoring code, renaming variables, moving classes into multiple files, etc
+| `style:`  | Changes to comply with style guidelines. Indentation changes, brackets alignment, etc
 | `test:`   | Anything related to testing
 
 ### Git branch naming styleguide
