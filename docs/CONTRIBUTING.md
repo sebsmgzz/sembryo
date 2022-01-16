@@ -64,6 +64,25 @@ Styleguides
 | `clean:`  | Indentation changes, brackets alignment, spliting classes into multiple files, etc
 | `test:`   | Anything related to testing
 
+### Git branch naming styleguide
+There are 6 types of branches.
+
+- **Production** - One to rule them all. A single branch considered the root of the repo. This branch will go into production. Never push directly to this branch, except when initially setting up a repository.
+- **Release** - These are the branches that run the QA or tests. No commits are allowed here. After mergin to `main`, the next increment in this branch will be at the very least a minor versioning increment (i.e. 1.0.0 increments to 1.1.0). There shall only be one of this branches per version increment. (i.e. after merging branch `release\1.0.0` checkout the `release\1.1.0` from itself or checkout the `release\2.0.0` from `main`). How long you want to keep the previous version branch after a version increment is up to you.
+- **Hotfix** - These branches are unexpected bug fixes that skip the entire workflow due to their tight relationship to the production environment. The naming convention is `hfix\X` where `X` is the issue id of the bug. Multiple hot fixes branches can exists but the recomendation is to have one at a time (depends on each individual situation). Check them out from `main` and merge them directly to it and the current `release` branch. These fixes require a patch version increment. (i.e. 1.0.0 changes to 1.0.1)
+- **Develop** - These branches are related to the integration phase of the code. Check them out from a `release` branch and merge them to that same `release` branch. Allowed commits include bug fixes and cleansup. Any other type of commit shall come from a feature branch.
+- **Feature** - Here is where the magic happens. Anytype of commits are allowed here. Branch naming is `feat\X` where `X` is the issue number of the feature. However, if several developers are working on an individual feature, it is recommended to split those branches into separate branches by appending the name of the developer to them. Once these branch merge into a `develop` branch, delete them.
+- **Experimental** - These branches are completly meant for breaking up things. Feel free to use them to mess around and do research for specific features. Do **NOT** ever merge this branches since they are meant to be cause breaking changes to the existing code base.
+
+| Branch       | Name                  | Allowed commits | Checkout from | Merge into |
+| :-           | :-                    | :-              | :-            | :-         |
+| Production   | `main` (aka `master`) | None            | None          | None     
+| Release      | `release\X`           | None            | `main`        | `main`
+| Hotfix       | `hfix\X`              | `bug`           | `main`        | `main`, `release`
+| Develop      | `develop`             | `bug`, `clean`  | `release\x`   | `release\x`
+| Feature      | `feat\X`              | Any             | `develop`     | `develop`
+| Experimental | `exp\X`               | Any             | Any           | None
+
 ### Documentation styleguide
 Use markdown whenever possible:
 - Use a single `h1` header per documentation file.
